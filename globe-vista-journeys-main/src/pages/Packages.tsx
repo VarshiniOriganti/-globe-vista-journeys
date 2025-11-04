@@ -185,7 +185,16 @@ const Packages = () => {
                     <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                       {pkg.name}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4">{pkg.destination}</p>
+                    <p className="text-muted-foreground text-sm mb-3">{pkg.destination}</p>
+                    
+                    <p className="text-sm text-foreground/90 mb-4 line-clamp-2">
+                      {pkg.id === 1 && "Experience the magic of the Greek islands with our carefully curated tour. Sail through the crystal-clear Aegean Sea, explore whitewashed villages, and enjoy breathtaking sunsets over the caldera."}
+                      {pkg.id === 2 && "Embark on an unforgettable journey through East Africa's most famous game reserves. Witness the Great Migration, meet the Maasai people, and stay in luxury safari lodges under the African sky."}
+                      {pkg.id === 3 && "Chase the mesmerizing Northern Lights across Iceland's dramatic landscapes. Soak in geothermal hot springs, walk behind waterfalls, and explore ice caves in this land of fire and ice."}
+                      {pkg.id === 4 && "Immerse yourself in Japan's rich cultural heritage, from the neon-lit streets of Tokyo to the ancient temples of Kyoto. Experience traditional tea ceremonies, sushi-making classes, and the beauty of cherry blossoms."}
+                      {pkg.id === 5 && "Breathe in the fresh Alpine air as you hike through picturesque Swiss villages and mountain trails. Enjoy cable car rides, cheese fondue, and stunning views of the snow-capped peaks."}
+                      {pkg.id === 6 && "Indulge in the ultimate tropical paradise with our luxury Maldives escape. Stay in overwater bungalows, snorkel in vibrant coral reefs, and enjoy world-class spa treatments by the ocean."}
+                    </p>
 
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">

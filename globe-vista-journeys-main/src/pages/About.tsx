@@ -38,12 +38,21 @@ const About = () => {
       <Navbar />
       <main className="pt-20">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-secondary via-primary to-accent py-20 text-background">
+        <section className="bg-gradient-to-br from-secondary to-primary py-20 text-background">
           <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4"
+            >
+              <Globe2 size={16} />
+              <span className="text-sm font-medium">About Our Journey</span>
+            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="font-heading text-5xl md:text-6xl font-bold mb-6"
             >
               About Us
@@ -51,7 +60,7 @@ const About = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto"
             >
               For over 25 years, GlobeVista has been crafting unforgettable journeys for travelers worldwide.

@@ -16,10 +16,19 @@ const Contact = () => {
         {/* Hero */}
         <section className="bg-gradient-to-br from-accent via-secondary to-primary py-20 text-background">
           <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4"
+            >
+              <Mail size={16} />
+              <span className="text-sm font-medium">We're Here to Help</span>
+            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="font-heading text-5xl md:text-6xl font-bold mb-6"
             >
               Get In Touch
@@ -27,7 +36,7 @@ const Contact = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto"
             >
               Have questions? Need a custom itinerary? Our travel experts are here to help.

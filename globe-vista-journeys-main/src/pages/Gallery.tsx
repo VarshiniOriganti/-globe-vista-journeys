@@ -24,7 +24,7 @@ const Gallery = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-muted/30">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <main className="pt-20">
         {/* Hero */}
